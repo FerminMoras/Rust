@@ -1,8 +1,7 @@
 mod practica2;
+mod practica3;
 
 fn main() {
-
-  /*   
   
     println!("Ejercicio 1");
     let num = 31;
@@ -89,8 +88,6 @@ fn main() {
     println!("Ejercicio 14");
     let mut flotante = 5.5;
     practica2::ej14::incrementar(&mut flotante);
-    println!("Numero flotante incrementado {}", flotante);
-
-    */    
+    println!("Numero flotante incrementado {}", flotante); 
 
 }

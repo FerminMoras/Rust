@@ -20,5 +20,22 @@ pub fn es_primo(num: i32) -> bool {
                 }
             }
             return true;
-        } 
-}
+        }
+    }       
+
+#[cfg(test)]
+    mod tests {
+    use super::*;
+
+    #[test]
+    fn test_es_primo_true() {
+        let test_true = es_primo(13);
+        assert_eq!(test_true,true);
+    }
+
+    #[test]
+    fn test_es_primo_false() {   
+        let test_true = es_primo(12);
+        assert_eq!(test_true,false);
+    }
+}         
