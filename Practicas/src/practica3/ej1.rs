@@ -38,5 +38,20 @@ mod tests {
         let res = per.to_string();
         assert_eq!(res,"Hola, me llamo Fermin, tengo 25 años y vivo en La Rioja 668");
     }
+
+    #[test]
+    fn test_obtener_edad() {
+        let per: Persona = Persona::new("Fermin".to_string(),25,"La Rioja 668".to_string());
+        let resultado = per.obtener_edad();
+        assert_eq!(resultado, 25);
+    }
+
+    #[test]
+    fn test_actualizar_direccion(){
+        let mut per: Persona = Persona::new("Fermin".to_string(),25,"La Rioja 668".to_string());
+        per.actualizar_direccion("Calle 4 entre 15 y 16".to_string());
+        let resultado = per.to_string();
+        assert_eq!(resultado, "Hola, me llamo Fermin, tengo 25 años y vivo en Calle 4 entre 15 y 16");
+    }
 }    
 
