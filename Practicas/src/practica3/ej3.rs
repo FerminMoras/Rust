@@ -14,10 +14,62 @@ impl Fecha {
     }
     
     fn es_fecha_valida(&self) -> bool {
-        if self.dia >=1 && self.dia <=31 && self.mes >=1 && self.mes <=12 && self.año >= 0 {
-            true
+        let mes:u16 = self.mes;
+        if (mes >= 1) && (mes <= 12) {
+            match mes {
+                1 | 3 | 5 | 7 | 8 | 10 | 12 => {
+                    if(self.dia >= 1) && (self.dia <=31) {
+                        true
+                    } else {
+                        false
+                    }
+                }
+                4 | 6 | 9 | 11 => {
+                    if(self.dia >= 1) && (self.dia <=30) {
+                        true
+                    } else {
+                        false
+                    }
+                }
+                2 => {
+                    if self.es_bisiesto() {
+                        if(self.dia >= 1) && (self.dia <= 29) {
+                            true
+                        } else {
+                            false
+                        }
+                    }else {
+                        if(self.dia >= 1) && (self.dia <= 28) {
+                            true
+                        } else {
+                            false
+                        }
+                    }
+                }
+                _ => false 
+            }
         }else {
             false
+        }    
+    }
+
+    fn que_mes(&self) -> u16 {
+        let mes = self.mes;
+        match mes {
+            1 | 3 | 5 | 7 | 8 | 10 | 12 => {
+                    31
+            }
+            4 | 6 | 9 | 11 => {
+                    30
+            }
+            2 => {
+                if(self.es_bisiesto()) {
+                    29
+                }else {
+                    28
+                }
+            }
+            _ => 0   
         }
     }
 
@@ -28,14 +80,61 @@ impl Fecha {
             return false
         }       
     }
+
+    fn sumar_dias(&mut self, mut dias: u16) {
     
+        let mut mes = self.que_mes();
+        let dias_disp = mes - self.dia;
+        if dias <= dias_disp {
+            self.dia = self.dia + dias;
+        }
+        else {
+            while dias != 0 {
+                if self.dia <= mes {
+                    self.dia = self.dia + 1;
+                    dias = dias -1;
+                }
+                else {
+                    self.dia = 1;
+                    if self.mes == 12 {
+                        self.año = self.año + 1;
+                        self.mes = 1;
+                        mes = self.que_mes();
+                    }
+                    else{
+                        self.mes = self.mes + 1;
+                        mes = self.que_mes();
+                    }
+                }
+            }
+        }     
+    }    
 
-    fn sumar_dias(&mut self, dias: u16){
-        self.dia = self.dia + dias;
-    }
-
-    fn restar_dias(&mut self, dias: u16){
-        self.dia = self.dia - dias;
+    fn restar_dias(&mut self, mut dias: u16){
+        let mut mes = self.que_mes();
+        let dias_disp = self.dia;
+        if dias < dias_disp {
+            self.dia = self.dia - dias;
+        }
+        else {
+            while dias != 0 {
+                if self.dia > 1 {
+                    self.dia = self.dia - 1;
+                    dias = dias -1;
+                }
+                else {
+                    if self.mes == 1 {
+                        self.año = self.año - 1;
+                        self.mes = 12;
+                        self.dia = self.que_mes();
+                    }
+                    else{
+                        self.mes = self.mes - 1;
+                        self.dia = self.que_mes();
+                    }
+                }
+            }
+        }  
     }
 
     fn es_mayor(&self, una_fecha: Fecha) -> bool {
@@ -51,6 +150,7 @@ impl Fecha {
     }    
 }
 
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -65,7 +165,7 @@ mod tests {
 
     #[test]
     fn test_fecha_valida_true() {
-        let f = Fecha::new(13, 5, 2024);
+        let f = Fecha::new(29, 2, 2024);
         let ok = f.es_fecha_valida();
         assert_eq!(ok,true);
     }
@@ -85,13 +185,36 @@ mod tests {
 
     #[test]
     fn test_sumar_dias() {
-        let mut  f = Fecha::new(13, 2, 2020);
-        f.sumar_dias(10);
-        assert_eq!(f.dia,23);
+        let mut  f1 = Fecha::new(13, 5, 2020);
+        f1.sumar_dias(10);
+        assert_eq!(f1.dia,23);
+        
+        
+        let mut  f2 = Fecha::new(13, 5, 2020);
+        f2.sumar_dias(20);
+        assert_eq!(f2.dia,2);
+        assert_eq!(f2.mes,6);
+
+        let mut  f = Fecha::new(13, 12, 2020);
+        f.sumar_dias(20);
+        assert_eq!(f.dia,2);
+        assert_eq!(f.mes,1);
+        assert_eq!(f.año,2021);
     }
 
     #[test]
     fn test_restar_dias() {
+        let mut  f1 = Fecha::new(1, 5, 2020);
+        f1.restar_dias(1);
+        assert_eq!(f1.dia,30);
+        assert_eq!(f1.mes,4);
+        
+        let mut  f2 = Fecha::new(1, 1, 2020);
+        f2.restar_dias(1);
+        assert_eq!(f2.dia,31);
+        assert_eq!(f2.mes,12);
+        assert_eq!(f2.año,2019);
+
         let mut  f = Fecha::new(13, 2, 2020);
         f.restar_dias(10);
         assert_eq!(f.dia,3);
