@@ -36,7 +36,7 @@ impl Triangulo{
 
         fn calcular_area_escaleno(l1: f32, l2:f32, b: f32) -> f32 {
             let s = (l1 + l2 + b) / 2.0;
-            (s * (s - l1) - (s - l2) - (s - b)).sqrt()
+            (s * (s - l1) * (s - l2) * (s - b)).sqrt()
         }
 
         fn calcular_area_isoceles(b: f32, h: f32) -> f32 {
@@ -62,4 +62,59 @@ impl Triangulo{
         self.lado1 + self.lado2 + self.base
     }
     
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_crear_triangulo() {
+        let equi = Triangulo::new(10.0,10.0,10.0);
+        let iso = Triangulo::new(10.0,10.0,5.0);
+        let esca = Triangulo::new(10.0,7.0,5.0);
+
+        assert_eq!(equi.lado1, 10.0);
+        assert_eq!(iso.base, 5.0);
+        assert_eq!(esca.lado2, 7.0); 
+    }
+
+    #[should_panic]
+    #[test]
+    fn test_triangulo_mal_creado() {
+        let _tri = Triangulo::new(-1.0, 2.0, 3.0);
+    }
+
+    #[test]
+    fn test_determinar_tipo() {
+        let equi = Triangulo::new(10.0,10.0,10.0);
+        let iso = Triangulo::new(10.0,10.0,5.0);
+        let esca = Triangulo::new(10.0,7.0,5.0);
+
+        assert_eq!(equi.determinar_tipo(), "equilatero");
+        assert_eq!(iso.determinar_tipo(), "isoceles");
+        assert_eq!(esca.determinar_tipo(), "escaleno"); 
+    }
+
+    #[test]
+    fn test_calcular_area() {
+        let equi = Triangulo::new(10.0,10.0,10.0);
+        let iso = Triangulo::new(10.0,10.0,5.0);
+        let esca = Triangulo::new(10.0,7.0,5.0);
+
+        assert_eq!(equi.calcular_area(), 43.30127);
+        assert_eq!(iso.calcular_area(), 25.0);
+        assert_eq!(esca.calcular_area(), 16.248077)
+    }
+
+    #[test]
+    fn test_calcular_perimetro() {
+        let equi = Triangulo::new(10.0,10.0,10.0);
+        let iso = Triangulo::new(10.0,10.0,5.0);
+        let esca = Triangulo::new(10.0,7.0,5.0);
+
+        assert_eq!(equi.calcular_perimetro(), 30.0);
+        assert_eq!(iso.calcular_perimetro(), 25.0);
+        assert_eq!(esca.calcular_perimetro(), 22.0)
+    }
 }

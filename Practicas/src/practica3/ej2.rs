@@ -45,10 +45,10 @@ impl Rectangulo {
             assert_eq!(rectangulo.base, 5.5);
         }
 
-        #[should_panic(expect = "Dato vacio o incorrecto")]
+        #[should_panic]
         #[test]
         fn test_mal_creado() {
-            let rec: Rectangulo = Rectangulo::new(-2.0,0.0);
+            let _rec= Rectangulo::new(-2.0,0.0);
         }
 
         #[test]

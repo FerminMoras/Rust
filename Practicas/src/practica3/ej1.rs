@@ -30,7 +30,7 @@ impl Persona{
     }
 
     fn actualizar_direccion(&mut self, dir: Option<String>) {
-        if let Some(direccion) = &self.direccion{
+        if let Some(_) = &self.direccion{
             self.direccion = dir;
         }
     }    

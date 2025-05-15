@@ -63,7 +63,7 @@ impl Fecha {
                     30
             }
             2 => {
-                if(self.es_bisiesto()) {
+                if self.es_bisiesto() {
                     29
                 }else {
                     28
@@ -111,7 +111,6 @@ impl Fecha {
     }    
 
     fn restar_dias(&mut self, mut dias: u16){
-        let mut mes = self.que_mes();
         let dias_disp = self.dia;
         if dias < dias_disp {
             self.dia = self.dia - dias;
@@ -126,12 +125,12 @@ impl Fecha {
                     if self.mes == 1 {
                         self.año = self.año - 1;
                         self.mes = 12;
-                        self.dia = self.que_mes();
                     }
                     else{
                         self.mes = self.mes - 1;
-                        self.dia = self.que_mes();
                     }
+                    self.dia = self.que_mes();
+                    dias = dias-1;
                 }
             }
         }  
