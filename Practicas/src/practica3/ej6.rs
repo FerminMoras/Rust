@@ -86,8 +86,8 @@ mod tests {
     #[should_panic]
     #[test]
     fn test_parcial_mal_creado(){
-        let par = Parciales::new("".to_string(), 7.0);
-        let par = Parciales::new("cadp".to_string(), 27.0);
+        let _par = Parciales::new("".to_string(), 7.0);
+        let _par = Parciales::new("cadp".to_string(), 27.0);
     }
 
     #[test]
@@ -105,7 +105,7 @@ mod tests {
         vector.push(par4);
         vector.push(par5);
     
-        let est = Estudiante::new("Fermin Moras".to_string(), 22993/5, vector);
+        let _est = Estudiante::new("Fermin Moras".to_string(), 22993/5, vector);
     }
 
     #[should_panic]
@@ -119,7 +119,7 @@ mod tests {
         vector.push(par1);
         vector.push(par2);
     
-        let est = Estudiante::new("".to_string(), 22993/5, vector);
+        let _est = Estudiante::new("".to_string(), 22993/5, vector);
     }
 
     #[test]
