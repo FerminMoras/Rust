@@ -1,11 +1,12 @@
-struct Fecha {
-    dia: u16,
-    mes: u16,
-    año: u16,
+#[derive(Debug,Clone)]
+pub struct Fecha {
+   pub dia: u16,
+   pub mes: u16,
+   pub año: u16,
 }
 
 impl Fecha {
-    fn new(day: u16, month:u16, year:u16) -> Fecha {      
+    pub fn new(day: u16, month:u16, year:u16) -> Fecha {      
         Fecha {
             dia: day,
             mes: month,
@@ -13,7 +14,7 @@ impl Fecha {
         }    
     }
     
-    fn es_fecha_valida(&self) -> bool {
+    pub fn es_fecha_valida(&self) -> bool {
         let mes:u16 = self.mes;
         if (mes >= 1) && (mes <= 12) {
             match mes {
@@ -81,7 +82,7 @@ impl Fecha {
         }       
     }
 
-    fn sumar_dias(&mut self, mut dias: u16) {
+    pub fn sumar_dias(&mut self, mut dias: u16) {
     
         let mut mes = self.que_mes();
         let dias_disp = mes - self.dia;
@@ -136,7 +137,7 @@ impl Fecha {
         }  
     }
 
-    fn es_mayor(&self, una_fecha: Fecha) -> bool {
+    pub fn es_mayor(&self, una_fecha: &Fecha) -> bool {
         if self.año > una_fecha.año {
             return true
         }else if self.año == una_fecha.año && self.mes > una_fecha.mes{
@@ -222,9 +223,9 @@ mod tests {
     #[test]
     fn test_fecha_mayor() {
         let f1 = Fecha::new(13, 12, 2020);
-        let f2 = Fecha::new(13, 2, 2019);
-        let f3 = Fecha::new(13, 10, 2020);
-        let f4 = Fecha::new(7, 12, 2020);
+        let f2 = &Fecha::new(13, 2, 2019);
+        let f3 = &Fecha::new(13, 10, 2020);
+        let f4 = &Fecha::new(7, 12, 2020);
         assert_eq!(f1.es_mayor(f2),true);
         assert_eq!(f1.es_mayor(f3),true);
         assert_eq!(f1.es_mayor(f4),true);
