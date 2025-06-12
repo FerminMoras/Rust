@@ -6,8 +6,7 @@ struct Concesionario {
     capacidad: u32,
 }
 
-#[derive(Debug,Clone)]
-#[derive(PartialEq)]
+#[derive(Debug,Clone,PartialEq)]
 struct Autos {
     marca: String,
     modelo: String,
@@ -16,8 +15,7 @@ struct Autos {
     color: Color,
 }
 
-#[derive(Debug,Clone)]
-#[derive(PartialEq)]
+#[derive(Debug,Clone,PartialEq)]
 enum Color {
     ROJO,
     VERDE,
@@ -43,7 +41,7 @@ impl Autos {
        }    
     }
 
-    fn calcular_precio(& mut self)-> f32 {
+    pub fn calcular_precio(& mut self)-> f32 {
         let mut valor = 0.0;
 
         match self.color {
@@ -85,7 +83,7 @@ impl Concesionario {
                 capacidad: capacidad,
             }
         }
-    }    
+    } 
 
     fn agregar_auto(&mut self,auto: Autos) -> bool{
         if self.lista_autos.len() < self.capacidad as usize{
@@ -122,6 +120,7 @@ impl Concesionario {
         return None;
     }
 }
+
 
 #[cfg(test)]
 mod tests {
