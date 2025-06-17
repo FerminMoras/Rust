@@ -219,11 +219,14 @@ mod tests {
     use super::*;
     #[test]
     fn test_precio_final() {
-        let cli = Cliente::new(nombre, apellido, direccion, dni, suscripcion, email);
+        let ven = Vendedor::new("Delfina", "Ferrante", "47 767", 1337, 22, 3, 350000.0);
+        let cli = Cliente::new("Fermin", "Moras", "La Rioja 668", 41876698, true, Some("feer.moras@gmail.com"));
 
         let prod = Producto::new("Coca Cola", "Gaseosas".to_string(), 2400.0);
         let items = ItemProductos::new(prod, 3);
-
+        let mut vec_p = Vec::new();
+        vec_p.push(items);
+        
         let mut v_string = Vec::new();
         v_string.push("Coca cola".to_string());
         v_string.push("Lays".to_string());
@@ -231,6 +234,9 @@ mod tests {
 
         let lista_prod = DescuentosProductos::new(v_string, 0.15);
 
-        let venta = Venta::new("16/06/2025", cliente, vendedor, pago, listado);
+        let venta = Venta::new("16/06/2025", cli, ven, Pagos::TRANSFERENCIA, vec_p.clone());
+
+        let total = venta.precio_final_venta(&lista_prod);
+        assert_eq!(total, 1836.0);
     }
 }
