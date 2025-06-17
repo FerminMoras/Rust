@@ -32,9 +32,13 @@ fn contar_primos(v: Vec<i32>) -> usize {
     v.iter().filter(|&n| n.es_primo()).count()
 }
 
-#[test]
-fn test_es_primo() {
-    let v = vec![3,5,7,13,21,25,29];
-    let cant = contar_primos(v);
-    assert_eq!(cant,5);
+#[cfg(test)]
+mod tests{
+    use super::*;
+    #[test]
+    fn test_es_primo() {
+        let v = vec![3,5,7,13,21,25,29];
+        let cant = contar_primos(v);
+        assert_eq!(cant,5);
+    }
 }
