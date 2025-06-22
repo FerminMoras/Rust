@@ -1,0 +1,11 @@
+/home/fermin/Escritorio/Rust/Practicas/src/coverage/debug/deps/liblitemap-02bf27d0e285ad4c.rmeta: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/map.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/mod.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/slice_impl.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/vec_impl.rs
+
+/home/fermin/Escritorio/Rust/Practicas/src/coverage/debug/deps/liblitemap-02bf27d0e285ad4c.rlib: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/map.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/mod.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/slice_impl.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/vec_impl.rs
+
+/home/fermin/Escritorio/Rust/Practicas/src/coverage/debug/deps/litemap-02bf27d0e285ad4c.d: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/map.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/mod.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/slice_impl.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/vec_impl.rs
+
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/lib.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/map.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/mod.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/slice_impl.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litemap-0.8.0/src/store/vec_impl.rs:

@@ -1,0 +1,11 @@
+/home/fermin/Escritorio/Rust/Practicas/src/coverage/debug/deps/libtoml_write-673e65af64c7485c.rmeta: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/key.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/string.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/value.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/write.rs
+
+/home/fermin/Escritorio/Rust/Practicas/src/coverage/debug/deps/libtoml_write-673e65af64c7485c.rlib: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/key.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/string.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/value.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/write.rs
+
+/home/fermin/Escritorio/Rust/Practicas/src/coverage/debug/deps/toml_write-673e65af64c7485c.d: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/key.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/string.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/value.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/write.rs
+
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/lib.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/key.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/string.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/value.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/write.rs:

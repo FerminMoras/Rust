@@ -1,0 +1,12 @@
+/home/fermin/Escritorio/Rust/Practicas/target/debug/deps/libanstyle-39cb1377a2abc41e.rmeta: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/macros.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/color.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/effect.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/reset.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/style.rs
+
+/home/fermin/Escritorio/Rust/Practicas/target/debug/deps/libanstyle-39cb1377a2abc41e.rlib: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/macros.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/color.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/effect.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/reset.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/style.rs
+
+/home/fermin/Escritorio/Rust/Practicas/target/debug/deps/anstyle-39cb1377a2abc41e.d: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/macros.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/color.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/effect.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/reset.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/style.rs
+
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/lib.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/macros.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/color.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/effect.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/reset.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.11/src/style.rs:

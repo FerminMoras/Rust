@@ -1,0 +1,13 @@
+/home/fermin/Escritorio/Rust/Practicas/target/debug/deps/libsemver-fa2a1f93ddd47557.rmeta: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/backport.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/display.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/error.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/eval.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/identifier.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/impls.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/parse.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/serde.rs
+
+/home/fermin/Escritorio/Rust/Practicas/target/debug/deps/semver-fa2a1f93ddd47557.d: /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/lib.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/backport.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/display.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/error.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/eval.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/identifier.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/impls.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/parse.rs /home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/serde.rs
+
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/lib.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/backport.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/display.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/error.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/eval.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/identifier.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/impls.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/parse.rs:
+/home/fermin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.26/src/serde.rs:

@@ -1,5 +1,6 @@
 
-struct Concesionario {
+#[derive(Debug,Clone,PartialEq)]
+pub struct Concesionario {
     nombre: String,
     direccion: String,
     lista_autos: Vec<Autos>,
@@ -7,7 +8,7 @@ struct Concesionario {
 }
 
 #[derive(Debug,Clone,PartialEq)]
-struct Autos {
+pub struct Autos {
     marca: String,
     modelo: String,
     año: u32,
@@ -16,7 +17,7 @@ struct Autos {
 }
 
 #[derive(Debug,Clone,PartialEq)]
-enum Color {
+pub enum Color {
     ROJO,
     VERDE,
     AZUL,
@@ -26,7 +27,7 @@ enum Color {
 }
 
 impl Autos {
-    fn new(marca: String, modelo: String, año: u32, precio_bruto: f32, color: Color) -> Autos {
+    pub fn new(marca: String, modelo: String, año: u32, precio_bruto: f32, color: Color) -> Autos {
        if marca == "" || modelo == "" || año < 1886 || precio_bruto < 0.0 {
         panic!("Dato/s invalidos");
        }
@@ -71,7 +72,7 @@ impl Autos {
 }
 
 impl Concesionario {
-    fn new(nombre: String, direccion: String, lista_autos: Vec<Autos>, capacidad: u32) -> Concesionario {
+    pub fn new(nombre: String, direccion: String, lista_autos: Vec<Autos>, capacidad: u32) -> Concesionario {
         if nombre == "" || direccion == "" {
             panic!("Dato/s invalidos");
         }
@@ -85,7 +86,7 @@ impl Concesionario {
         }
     } 
 
-    fn agregar_auto(&mut self,auto: Autos) -> bool{
+    pub fn agregar_auto(&mut self,auto: Autos) -> bool{
         if self.lista_autos.len() < self.capacidad as usize{
             self.lista_autos.push(auto);
             true
@@ -95,7 +96,7 @@ impl Concesionario {
         }
     }
 
-    fn eliminar_auto(&mut self, auto:Autos) {
+    pub fn eliminar_auto(&mut self, auto:Autos) {
         let size = self.lista_autos.len();
         let mut ok = false;
         let mut pos = 0;
@@ -160,9 +161,8 @@ mod tests {
         assert_eq!(con.buscar_auto(auto5.clone()), Some(auto5.clone()));
         con.eliminar_auto(auto5.clone());
         assert_eq!(con.buscar_auto(auto5.clone()), None);
-
         assert_eq!(auto1.calcular_precio(),18750.0);
         assert_eq!(auto2.calcular_precio(),63000.0);
-        assert_eq!(auto6.calcular_precio(),51000.0)
+        assert_eq!(auto6.calcular_precio(),51000.0);
     }
 }
